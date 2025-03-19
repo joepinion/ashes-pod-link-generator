@@ -1,4 +1,4 @@
-const BACKEND_HOST = 'http://l.plaidhatgames.com:8002';
+const BACKEND_HOST = 'https://www.plaidhatgames.com';
 
 const AshesPodLinkGenerator = {
     getProducts: () => {
