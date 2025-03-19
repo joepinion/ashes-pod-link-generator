@@ -1,0 +1,19 @@
+{
+  "name": "ashes-pod-link-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joepinion/ashes-pod-link-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joepinion/ashes-pod-link-generator/issues"
+  },
+  "homepage": "https://github.com/joepinion/ashes-pod-link-generator#readme"
+}
