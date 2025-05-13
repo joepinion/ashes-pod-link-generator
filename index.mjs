@@ -1,15 +1,15 @@
 const BACKEND_HOST = 'https://www.plaidhatgames.com';
 
 const AshesPodLinkGenerator = {
-    getProducts: () => {
+    getProducts: (backend=BACKEND_HOST) => {
         return new Promise(resolve=>{
             backendPromise(
-                `${BACKEND_HOST}/ashes-cart-link/products/`,
+                `${backend}/ashes-cart-link/products/`,
                 'GET',
             ).then(r=>resolve(r))
         })
     },
-    getLink: (product, options={}) => {
+    getLink: (product, options={}, backend=BACKEND_HOST) => {
         return new Promise(resolve=>{
             let o = {
                 sku: product,
@@ -22,7 +22,7 @@ const AshesPodLinkGenerator = {
                 o.cards = options.cards;
             }
             backendPromise(
-                `${BACKEND_HOST}/ashes-cart-link/buy/`,
+                `${backend}/ashes-cart-link/buy/`,
                 'POST',
                 null,
                 o,
